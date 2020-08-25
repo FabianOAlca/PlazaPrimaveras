@@ -33,7 +33,7 @@
     ```
     < Tambien se puede agregar datos ingresando en el body de un post, pueden ser postman o insomnia >
 
-* 5.- Correr Servidor
+* 5.- Correr Servidor corre en el puerto localhost//4000
     ```
     npm run dev
     ```
