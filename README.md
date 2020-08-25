@@ -1,5 +1,4 @@
-# Resuelve FC
-< Prueba de Backend para Resuelve>
+# Plaza Primaveras Backend
 
 * Para correrlo 
 
@@ -7,8 +6,15 @@
 
 * 1.- Clonalo 
     ```
-    git clone https://github.com/FabianOAlca/ResuelveFc.git
-    cd 
+    git clone https://github.com/FabianOAlca/PlazaPrimaveras.git
+    ```
+    Para trabajar en el backend
+    ```
+    cd PlazaPrimaveras 
+    ```
+    Para trabajar en el Frontend con React Js
+    ```
+    cd Plazaprimaveras/Frontend
     ```
 * 2.- Crea archivo .env en raiz para las variables de entorno
     < Se recomienda Postgresql>
@@ -16,7 +22,7 @@
     ```
     DATABASE_URL= postgres://USER:PASSWORD@localhost:PORT/DATABASE_NAME >
     ```
-* 3.- Corre en terminal y en la carpeta raiz del proyecto para instalar dependencias
+* 3.- Corre en la carpeta raiz del proyecto para instalar dependencias
     ```
     npm install
     ```
@@ -32,10 +38,5 @@
     npm run dev
     ```
 
-* 6.- Se requieren softwares para simular peticiones tales como [Postman](https://www.postman.com/) e [Insombian](https://insomnia.rest/download/)
+* 6.- Se requieren softwares para simular peticiones tales como [Postman](https://www.postman.com/) e [Insombian](https://insomnia.rest/download/), solo para trabajar con el backend como api
 
-* 7.- El proyecto fue Realizado con framework express y programado en js la logica del problema a resolver esta en:
-
-    ```
-    ./Funciones de apoyo/ObtenerPaga.js
-    ```
