@@ -25,19 +25,22 @@
     ```
     git clone https://github.com/FabianOAlca/PlazaPrimaveras.git
     ```
-    Para trabajar en el backend
+    * Para trabajar en el backend
     ```
     cd PlazaPrimaveras 
     ```
-    Para trabajar en el Frontend con React Js
-    ```
-    cd Plazaprimaveras/Frontend
-    ```
+    * Para trabajar en el Frontend con React Js
+       ```
+         cd PlazaPrimaveras/Frontend
+         npm install
+         npm run start
+       ```
+    
 * 2.- Crea archivo .env en raiz para las variables de entorno
     Se recomienda Postgresql
     Ejemplo: 
     ```
-    DATABASE_URL= postgres://USER:PASSWORD@localhost:PORT/DATABASE_NAME >
+    DATABASE_URL= postgres://USER:PASSWORD@localhost:PORT/DATABASE_NAME
     ```
 * 3.- Corre en la carpeta raiz del proyecto para instalar dependencias
     ```
@@ -54,5 +57,5 @@
     npm run dev
     ```
 
-* 6.- Se requieren softwares para simular peticiones tales como [Postman](https://www.postman.com/) e [Insombian](https://insomnia.rest/download/), solo para trabajar con el backend como api
+* 6.- Se requieren software para simular peticiones tales como [Postman](https://www.postman.com/) e [Insombian](https://insomnia.rest/download/), solo para trabajar con el backend como api
 
