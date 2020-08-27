@@ -7,14 +7,11 @@ require("dotenv").config();
 require("./passport");
 
 
-//Users Router
-const usersRouter = require ('./routes/users')
+
 //Auth Router
 const authRouter = require('./routes/auth')
 //Locales Router
 const localesRouter = require('./routes/locales')
-//Create locales and edit
-const createRouter = require('./routes/create')
 
 var app = express();
 
@@ -25,9 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/auth',authRouter);
-app.use('/users', usersRouter);
 app.use('/locales',localesRouter);
-app.use('/create',createRouter);
 
 
 module.exports = app;

@@ -1,7 +1,7 @@
 var passport = require("passport")
 var passportJWT = require('passport-jwt')
 
-var models = require('./db/models')
+var models = require('./db/db_config')
 var localStrategy = require('passport-local').Strategy
 var JWTStrategy = passportJWT.Strategy
 var ExtractJWT = passportJWT.ExtractJwt
