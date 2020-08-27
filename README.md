@@ -52,7 +52,7 @@
     ./node_modules/.bin/sequelize db:seed:all
     ```
 
-* 5.- Correr Servidor corre en el puerto localhost//4000
+* 5.- Correr en el puerto localhost//4000
     ```
     npm run dev
     ```
