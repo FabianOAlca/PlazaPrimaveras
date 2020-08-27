@@ -1,4 +1,10 @@
-# Plaza Primaveras Backend
+# Plaza Primaveras
+
+## Proyecto para acreditacion de curso Full Stack Javascript impartido por [BEDU](https://bedu.org/)
+
+### Colaboradores del proyecto:
+    * [Ilse Alejandra Polanco Isais](https://github.com/IlsePolanco)
+    * [Ilse Alejandra Polanco Isais](https://github.com/IlsePolanco)
 
 * Para correrlo 
 
