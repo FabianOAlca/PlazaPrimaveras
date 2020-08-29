@@ -1,7 +1,7 @@
 var passport = require("passport")
 var passportJWT = require('passport-jwt')
 
-var models = require('./db/db_config')
+var db = require('./db/db_config')
 var localStrategy = require('passport-local').Strategy
 var JWTStrategy = passportJWT.Strategy
 var ExtractJWT = passportJWT.ExtractJwt
@@ -14,7 +14,7 @@ passport.use(
             passwordField: 'password',
         },
         (email, password, cb) => {
-            return models.User.findOne(
+            return db.User.findOne(
                 {where: {email,password}})
             .then((user)=>{
                 return cb(null,user)})
@@ -33,7 +33,7 @@ passport.use(
             secretOrKey: process.env.JWT_SECRET,
         },
         (jwtPyaload, cb) => {
-            return models.User.findByPk(jwtPyaload.id)
+            return db.User.findByPk(jwtPyaload.id)
             .then((user)=>{
                 return cb(null, user)
             })
