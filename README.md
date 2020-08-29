@@ -43,7 +43,7 @@
     ```
 * 3.-Base de Datos, corre en consola
     Ejemplo: 
-
+   ```
     ~psql postgres
     postgres=# CREATE USER admin WITH PASSWORD 'admin';
     postgres=# CREATE DATABASE primavera;
