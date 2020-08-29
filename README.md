@@ -35,8 +35,12 @@
          npm install
          npm run start
        ```
-    
-* 2.-Base de Datos, corre en consola
+* 2.- Crea archivo .env para poder atuentificar el usuario requiere una variable de entorno secreta
+    Ejemplo:
+    ```
+    JWT_SECRET = Palbra_secreta
+    ```
+* 3.-Base de Datos, corre en consola
     Ejemplo: 
     ```
     ~psql postgres
@@ -50,21 +54,21 @@
     ```
     Se puede omitir el ultimo paso despues de crear la tabla en la base de datos y se puede apoyar con sofware externo para agregar informacion en la tabla 
     
-* 3.- Corre en la carpeta raiz del proyecto para instalar dependencias
+* 4.- Corre en la carpeta raiz del proyecto para instalar dependencias
     ```
     npm install
     ```
-* 4.- Corre migraciones y seeders para inicializar datos por defecto 
+* 5.- Corre migraciones y seeders para inicializar datos por defecto 
      ```
     ./node_modules/.bin/sequelize db:migrate
     ./node_modules/.bin/sequelize db:seed:all
     ```
 
-* 5.- Correr en el puerto localhost//4000
+* 6.- Correr en el puerto localhost//4000
     ```
     npm run dev
     ```
 
-* 6.- Se requieren software para simular peticiones tales como [Postman](https://www.postman.com/) e [Insombian](https://insomnia.rest/download/), solo para trabajar con el backend como api
+* 7.- Se requieren software para simular peticiones tales como [Postman](https://www.postman.com/) e [Insombian](https://insomnia.rest/download/), solo para trabajar con el backend como api
 
 
