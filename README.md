@@ -28,6 +28,7 @@
     * Para trabajar en el backend
     ```
     cd PlazaPrimaveras 
+
     ```
     * Para trabajar en el Frontend con React Js
        ```
@@ -42,7 +43,7 @@
     ```
 * 3.-Base de Datos, corre en consola
     Ejemplo: 
-    ```
+
     ~psql postgres
     postgres=# CREATE USER admin WITH PASSWORD 'admin';
     postgres=# CREATE DATABASE primavera;
@@ -70,5 +71,6 @@
     ```
 
 * 7.- Se requieren software para simular peticiones tales como [Postman](https://www.postman.com/) e [Insombian](https://insomnia.rest/download/), solo para trabajar con el backend como api
+
 
 
