@@ -7,10 +7,6 @@
 var app = require('../app');
 var debug = require('debug')('plazaprimaverasback:server');
 var http = require('http');
-<<<<<<< HEAD
-
-=======
->>>>>>> 147df584d4a29f22baddc3744b8ba80770dbcd7f
 
 /**
  * Get port from environment and store in Express.
@@ -32,10 +28,7 @@ var server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
-<<<<<<< HEAD
 
-=======
->>>>>>> 147df584d4a29f22baddc3744b8ba80770dbcd7f
 /**
  * Normalize a port into a number, string, or false.
  */
