@@ -36,10 +36,10 @@ build/Release
 Backend/node_modules/
 Backend/jspm_packages/
 Backend/package-lock.json
-Forntend/package-lock.json
-Forntend/node_modules
-Forntend/.pnp
-Forntend/.pnp.js
+Frontend/package-lock.json
+Frontend/node_modules
+Frontend/.pnp
+Frontend/.pnp.js
 
 
 
@@ -71,18 +71,18 @@ typings/
 */**/*.sqlite3
 
 # testing
-Forntend/coverage
+Frontend/coverage
 
 # production
-Forntend/build
+Frontend/build
 
 # misc
-Forntend/.DS_Store
-Forntend/.env.local
-Forntend/.env.development.local
-Forntend/.env.test.local
-Forntend/.env.production.local
+Frontend/.DS_Store
+Frontend/.env.local
+Frontend/.env.development.local
+Frontend/.env.test.local
+Frontend/.env.production.local
 
-Forntend/npm-debug.log*
-Forntend/yarn-debug.log*
-Forntend/yarn-error.log*
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
