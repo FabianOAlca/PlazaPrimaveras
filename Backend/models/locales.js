@@ -1,4 +1,4 @@
-const db = require('../db/db_config')
+const db = require('../db/db_config');
 
 // method to get all of locals in the Locales table
 const getLocales = async ()=>{
@@ -6,20 +6,21 @@ const getLocales = async ()=>{
         const locales = await db.Locales.findAll();
         return locales;
     }catch (error){
-        return console.log(error)
+        console.log(error)
+        throw Error(error)
     }
-}
+};
 
 // method to add a new local to the Locales table
 const addLocal = async (local)=>{
     try {
         await db.Locales.create(local);
         return true;
-    } catch (error) {
+    }catch (error){
         console.log(error)
-        return false
+        throw Error(error)
     }
-}
+};
 
 // method to find a only one of the element of the Locales table
 const getLocal = async (numLocal) =>{
@@ -29,11 +30,11 @@ const getLocal = async (numLocal) =>{
             where:{numLocal:numLocal}
         });
         return local;
-    } catch (error) {
+    }catch (error){
         console.log(error)
-        return false;   
+        throw Error(error)
     }
-}
+};
 
 // methot to update infoamtion in one of the elements in Locales table
 const updateLocal = async (numLocal,local)=>{
@@ -42,11 +43,11 @@ const updateLocal = async (numLocal,local)=>{
             where: {numLocal:numLocal}
         });
         return local
-    } catch (error) {
+    }catch (error){
         console.log(error)
-        return false;
+        throw Error(error)
     }
-}
+};
 
 // Method to delate on of the elements in Locales table
 const delateLocal = async (numLocal)=>{
@@ -55,11 +56,11 @@ const delateLocal = async (numLocal)=>{
             where: {numLocal:numLocal}
         });
         return true;
-    } catch (error) {
-        console.log(error);
-        return false;
+    }catch (error){
+        console.log(error)
+        throw Error(error)
     }
-}
+};
 
 
 
@@ -69,4 +70,4 @@ module.exports = {
     getLocal,
     updateLocal,
     delateLocal
-}
+};

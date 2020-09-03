@@ -4,52 +4,53 @@ const router = express.Router();
 
 //get all elements of db primaveras
 router.get('/', async (req,res)=>{
-    const locales = await localesModel.getLocales();
-    res.json(locales);
+    try {
+        const locales = await localesModel.getLocales();
+        res.json(locales); // status 200
+    } catch (error) {
+        res.status(500).json({error:error.message})
+    }    
 });
-
 // add new local.... structure of the json to de end of this window
 router.post('/', async (req,res)=>{
-    const local = req.body;
-    const success = await localesModel.addLocal(local);
-    if (success){
-        res.send(true);
-    }else{
-        res.send(false);
+    try {
+        const local = req.body;
+        await localesModel.addLocal(local);
+        res.status(201).json({success:true})        
+    } catch (error) {
+        res.status(500).json({error:error.message})
     }
-})
-
+});
 // get only one local in the table
 router.get('/:numLocal', async (req,res)=>{
-    const numLocal = req.params.numLocal;
-    const success = await localesModel.getLocal(numLocal);
-    if (success){
-        res.json(success);
-    }else{
-        res.send(false);
+    try {
+        const numLocal = req.params.numLocal;
+        const local = await localesModel.getLocal(numLocal);
+        res.json(local) //status 200             
+    } catch (error) {
+        res.status(500).json({error:error.message})
     }
 });
 // edit information of the one local
 router.put('/update/:numLocal', async (req,res)=>{
-    const numLocal = req.params.numLocal;
-    const local = req.body;
-    const success = await localesModel.updateLocal(numLocal,local);
-    if (success){
-        res.send(true);
-    }else{
-        res.send(false);
-    }
+    try {
+        const numLocal = req.params.numLocal;
+        const local = req.body;
+        await localesModel.updateLocal(numLocal,local);
+        res.sendStatus(204);        
+    } catch (error) {
+        res.status(500).json({error:error.message})
+    }    
 });
-
 // delet all infoamtion of the one local
 router.delete('/delate/:numLocal',async (req,res)=>{
-    const numLocal = req.params.numLocal
-    const success = await localesModel.delateLocal(numLocal)
-    if (success){
-        res.send(true)
-    }else{
-        res.send(false)
-    }
+    try {
+        const numLocal = req.params.numLocal
+        await localesModel.delateLocal(numLocal)
+        res.sendStatus(204);        
+    } catch (error) {
+        res.status(500).json({error:error.message})
+    }    
 });
 
 

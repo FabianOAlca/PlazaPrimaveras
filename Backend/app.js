@@ -7,6 +7,8 @@ require("dotenv").config();
 require("./passport");
 
 
+
+
 const localesRouter = require('./routes/locales')
 
 
@@ -17,6 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 
 app.use('/locales',localesRouter);
