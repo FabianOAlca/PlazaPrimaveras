@@ -30,7 +30,7 @@ const Admin = sequelize.define('admin',{
     
     user_name : DataTypes.TEXT,
     email: DataTypes.TEXT,
-    password: DataTypes.TEXT
+    password: DataTypes.TEXT,
     },{
     timestamps: false 
 });
