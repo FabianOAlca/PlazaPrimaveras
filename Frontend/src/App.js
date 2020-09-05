@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Route} from 'react-router-dom';
 import Navbar from './Components/navbar';
 import Footer from './Components/footer';
@@ -6,6 +6,8 @@ import Banner from './Components/banner';
 import Icons from './Components/icons';
 import Featured from './Components/featured'
 import Contact from './pages/contact';
+import Directory from './pages/directory'
+import AboutMe from './pages/aboutme'
 import './Components/styles/home.css';
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
        <Contact></Contact>
       </Route>
       <Route path="/directory">
-       
+       <AboutMe></AboutMe>
       </Route>
       <Route path="/map">
        
@@ -33,8 +35,7 @@ function App() {
       <Route path="/releases">
       
       </Route>
-      <Route path ="/store/:id">
-      
+      <Route path ="/booth">
       </Route>
       <Footer/>
     </div>

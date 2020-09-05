@@ -1,7 +1,9 @@
 import React from 'react';
-import './styles/localCard.css'
+import './styles/boothCard.css'
 
 function localCard(props){
+
+    
 
     return (
     <div className="col s12 m4 l3">

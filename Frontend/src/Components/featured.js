@@ -1,5 +1,5 @@
 import React from 'react';
-import LocalCard from './localCard';
+import LocalCard from './boothCard';
 import './styles/featured.css';
 
 function featured(props){
