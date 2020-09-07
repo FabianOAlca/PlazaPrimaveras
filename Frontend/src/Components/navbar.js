@@ -5,8 +5,8 @@ function Navbar(props) {
  return(
    <div className="navbar-fixed">
    <nav className="pink darken-3" role="navigation">
-     <div className="nav-wrapper container"><a id="logo-container" href="" className="brand-logo"></a>
-       <img src="./resources/logo.svg" />
+     <div className="nav-wrapper container">        
+          <a id="logo-container" href="" className="brand-logo valign-wrapper"><img src="./resources/logo.svg" /></a>        
        <ul className="right hide-on-med-and-down">
          <li><Link to="/home">Home</Link></li>
          <li><Link to="/direcotory">Directorio</Link></li>

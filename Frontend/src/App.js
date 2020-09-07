@@ -6,7 +6,9 @@ import Banner from './Components/banner';
 import Icons from './Components/icons';
 import Featured from './Components/featured'
 import Contact from './pages/contact';
+import Booth from './pages/booth';
 import './Components/styles/home.css';
+import './Components/styles/navbar.css'
 
 function App() {
 
@@ -33,8 +35,8 @@ function App() {
       <Route path="/releases">
       
       </Route>
-      <Route path ="/store/:id">
-      
+      <Route path ="/booth/:numlocal">
+        <Booth></Booth>
       </Route>
       <Footer/>
     </div>
