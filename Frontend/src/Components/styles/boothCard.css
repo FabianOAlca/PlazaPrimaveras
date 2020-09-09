@@ -1,0 +1,18 @@
+.booth__card{
+  
+
+    height: 500px;
+}
+
+.booth__description{
+    height: 130px;
+}
+
+.booth__title{
+    background-color: #AD1457;
+    border-radius: 20px;
+}
+
+.booth__content__description{
+    height: 80px;
+}

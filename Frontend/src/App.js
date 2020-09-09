@@ -5,8 +5,11 @@ import Footer from './Components/footer';
 import Banner from './Components/banner';
 import Icons from './Components/icons';
 import Featured from './Components/featured'
+import Directory from './pages/directory';
 import Contact from './pages/contact';
 import './Components/styles/home.css';
+import Available from './pages/available';
+
 
 function App() {
 
@@ -20,21 +23,16 @@ function App() {
         <Icons></Icons>
         <Featured></Featured>
       </Route>
-    
+      <Route path="/rented">
+        <Directory></Directory>
+      </Route>
+      <Route path="/available">
+        <Available></Available>
+      </Route>
       <Route path="/contact">
-       <Contact></Contact>
+        <Contact></Contact>
       </Route>
-      <Route path="/directory">
-       
-      </Route>
-      <Route path="/map">
-       
-      </Route>
-      <Route path="/releases">
-      
-      </Route>
-      <Route path ="/store/:id">
-      
+      <Route path ="/booth">
       </Route>
       <Footer/>
     </div>

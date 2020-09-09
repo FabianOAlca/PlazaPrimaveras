@@ -9,7 +9,7 @@ function Navbar(props) {
        <img src="./resources/logo.svg" />
        <ul className="right hide-on-med-and-down">
          <li><Link to="/home">Home</Link></li>
-         <li><Link to="/direcotory">Directorio</Link></li>
+         <li><Link to="/rented">Directorio</Link></li>
          <li><Link to="/contact">Contacto</Link></li>
          <li><Link to="/login">Login</Link></li>
        </ul>

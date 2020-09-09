@@ -1,8 +1,28 @@
-import React from 'react';
-import LocalCard from './localCard';
+import React, {useEffect,useState} from 'react';
+import BoothCard from './boothCard';
+import axios from 'axios';
 import './styles/featured.css';
+import {Link} from 'react-router-dom'
 
-function featured(props){
+function Featured(props){
+
+    const [booths, setbooths] = useState([]);
+    async function fetchbooths() {
+        const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/locales/`);
+        setbooths(response.data)
+      }
+     useEffect(()=>{
+        fetchbooths();
+     },[])
+
+    const filtered = booths.filter((doFiltered)=>{
+        return doFiltered.featured == true;
+    })
+    
+    const boothCardsFeatured = filtered.map((featured)=>{
+        return <BoothCard booth={featured}></BoothCard>
+     })
+
 
     return (
     <div className="container">
@@ -16,14 +36,14 @@ function featured(props){
                 
             </div>
             <div className="row">
-            <LocalCard></LocalCard>
-            <LocalCard></LocalCard>
-            <LocalCard></LocalCard>
-            <LocalCard></LocalCard>
+                {boothCardsFeatured}
             </div>
+            <div class="row center">
+                <Link to="/directory" id="download-button" class="btn-large waves-effect deep-orange darken-2">Ver todos</Link>
+            </div> 
         </div>
     </div>
     )
 }
 
-export default featured;
+export default Featured;
