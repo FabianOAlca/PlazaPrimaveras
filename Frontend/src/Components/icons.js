@@ -3,26 +3,26 @@ import React from 'react';
 function icons(props){
 
   return (
-    <div class="container">
-      <div class="section">
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center deep orange-text text-darken-4"><i class="material-icons">local_grocery_store</i></h2>
-              <h5 class="center">Productos locales y frescos</h5>
+    <div className="container">
+      <div className="section">
+        <div className="row">
+          <div className="col s12 m4">
+            <div className="icon-block">
+              <h2 className="center deep orange-text text-darken-4"><i className="material-icons">local_grocery_store</i></h2>
+              <h5 className="center">Productos locales y frescos</h5>
             </div>
           </div>
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center deep orange-text text-darken-4"><i class="material-icons">local_pharmacy</i></h2>
-              <h5 class="center">Consultorios y medicamentos</h5>
+          <div className="col s12 m4">
+            <div className="icon-block">
+              <h2 className="center deep orange-text text-darken-4"><i className="material-icons">local_pharmacy</i></h2>
+              <h5 className="center">Consultorios y medicamentos</h5>
             </div>
           </div>
 
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center deep orange-text text-darken-4"><i class="material-icons">local_laundry_service</i></h2>
-              <h5 class="center">Limpieza de ropa y accesorios</h5>
+          <div className="col s12 m4">
+            <div className="icon-block">
+              <h2 className="center deep orange-text text-darken-4"><i className="material-icons">local_laundry_service</i></h2>
+              <h5 className="center">Limpieza de ropa y accesorios</h5>
             </div>
           </div>
         </div>

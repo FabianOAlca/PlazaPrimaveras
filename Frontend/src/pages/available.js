@@ -1,9 +1,9 @@
 import React, {useEffect,useState} from 'react';
 import BoothCard from '../Components/boothCard';
-import axios from 'axios'
+import axios from 'axios';
 import {Link} from 'react-router-dom';
 
-function Directory(props) {
+function Available(props) {
    
    const [booths, setbooths] = useState([]);
    
@@ -19,7 +19,7 @@ function Directory(props) {
 
    // filter the booths by rented and no rented
    const boothsFiltered = booths.filter((doFiltered)=>{
-      return doFiltered.rented == true;
+      return doFiltered.rented == false;
    })
 
    // Order the list booths rented 
@@ -45,8 +45,8 @@ function Directory(props) {
          </div>
          <div className="col s6 nav__directory ">
                <ul className="tabs center">
-                  <li className="tab col s5"><Link className="active li__nav__rented" to="/rented">Locales</Link></li>
-                  <li className="tab col s5 disabled"><Link className="li__nav__rented" to="/available">Disponibles</Link></li>
+                  <li className="tab col s5"><Link className="active li__nav__available" to="/rented">Locales</Link></li>
+                  <li className="tab col s5 disabled"><Link className="li__nav__available" to="/available">Disponibles</Link></li>
                </ul>
         </div>
          <div className="row">
@@ -60,4 +60,4 @@ function Directory(props) {
 
 }
 
-export default Directory;
+export default Available;
