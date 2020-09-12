@@ -1,35 +1,38 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-function footer(props) {
+function Footer(props) {
 
  return(
- <footer class="page-footer pink darken-3">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="pink-text text-lighten-3"><strong>Nosotros</strong></h5>
-                <p class="white-text  text-lighten-4">Plaza Primavera's es parte de Villa de Álvarez desde hace 8 años, fundada en 2012, nuestro objetivo siempre ha sido ofrecer una amplia y diversa gama de productos a nuestros clientes, así como espacios óptimos para todos nuestros locatarios.</p>
+ <footer className="page-footer pink darken-3">
+    <div className="container">
+        <div className="row">
+            <div className="col l6 s12">
+                <h5 className="pink-text text-lighten-3"><strong>Nosotros</strong></h5>
+                <p className="white-text  text-lighten-4">Plaza Primavera's es parte de Villa de Álvarez desde hace 8 años, fundada en 2012, nuestro objetivo siempre ha sido ofrecer una amplia y diversa gama de productos a nuestros clientes, así como espacios óptimos para todos nuestros locatarios.</p>
             </div>
-            <div class="col l3 s12">
-                <h5 class="pink-text text-lighten-3"><strong>Navegación</strong></h5>
+            <div className="col l3 s12">
+                <h5 className="pink-text text-lighten-3"><strong>Navegación</strong></h5>
                 <ul>
-                    <li><a class="white-text" href="#!">Home</a></li>
-                    <li><a class="white-text" href="#!">Directorio</a></li>
-                    <li><a class="white-text" href="#!">Contacto</a></li>
+                    <li><Link className="white-text" to="/home">Home</Link></li>
+                    <li><Link className="white-text" to="/directory">Directorio</Link></li>
+                    <li><Link className="white-text" to="/aboutUs">Conocenos</Link></li>
                 </ul>
             </div>
-            <div class="col l3 s12">
-                <h5 class="pink-text text-lighten-3"><strong>Nuestras redes</strong></h5>
+            <div className="col l3 s12">
+                <h5 className="pink-text text-lighten-3"><strong>Nuestras redes</strong></h5>
                 <ul>
-                    <li><a class="white-text" href="#!">Facebook</a></li>
-                    <li><a class="white-text" href="#!">Instagram</a></li>
+                    <li> 
+                        <a href="https://www.facebook.com/plazaprimaveras">
+                            <img id="fb-icon" src="https://image.flaticon.com/icons/svg/1384/1384005.svg"/>
+                        </a>
+                    </li>
                 </ul>
             </div>
       </div>
     </div>
-    <div class="footer-copyright">
-        <div class="container">
-            <a class="orange-text text-orange darken-3" href="">Todos los derechos reservados. Plaza Primavera's © 2020</a>
+    <div className="footer-copyright">
+        <div className="container">
+            <a className="orange-text text-orange darken-3" href="">Todos los derechos reservados. Plaza Primavera's © 2020</a>
         </div>
     </div>
 </footer>
@@ -38,6 +41,6 @@ function footer(props) {
 
 }
 
-export default footer;
+export default Footer;
 
 

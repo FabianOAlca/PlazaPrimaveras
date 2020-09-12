@@ -5,6 +5,8 @@ var logger = require('morgan')
 var passport = require ('passport')
 require("dotenv").config();
 require("./passport");
+const cors = require('cors'); 
+
 
 
 
@@ -13,6 +15,7 @@ const localesRouter = require('./routes/locales')
 
 
 var app = express();
+app.use(cors());
 
 app.use(logger('dev'));
 app.use(express.json());
