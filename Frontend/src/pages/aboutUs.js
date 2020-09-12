@@ -4,9 +4,8 @@ import Galery from '../Components/galery';
 import './styles/aboutUs.css';
 import {Link} from 'react-router-dom';
 
-// apikey AIzaSyC1IEOe9H-3tPsTGSZV2opOfUdnuD6K7Fs
 
-const credential= 'AIzaSyC1IEOe9H-3tPsTGSZV2opOfUdnuD6K7Fs'
+const credential= process.env.REACT_APP_GOOGLE_CREDENTIAL;
 
 function AboutUs(props) {
     return(
