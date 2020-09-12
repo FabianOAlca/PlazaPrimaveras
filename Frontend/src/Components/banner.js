@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 function banner(props){
 
     return (
@@ -10,7 +11,7 @@ function banner(props){
         <h5 className="header col s12 white-text">El lugar más completo para tus necesidades y gustos.</h5>
         </div>
         <div className="row center">
-        <a href="" id="download-button" className="btn-large waves-effect deep-orange darken-2">Conócenos</a>
+        <Link to="/aboutUs" id="download-button" className="btn-large waves-effect deep-orange darken-2">Conócenos</Link>
         </div>
         <br></br>
         </div>

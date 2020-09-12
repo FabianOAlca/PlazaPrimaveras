@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-function footer(props) {
+function Footer(props) {
 
  return(
  <footer className="page-footer pink darken-3">
@@ -15,14 +15,17 @@ function footer(props) {
                 <ul>
                     <li><Link className="white-text" to="/home">Home</Link></li>
                     <li><Link className="white-text" to="/directory">Directorio</Link></li>
-                    <li><Link className="white-text" to="/contact">Contacto</Link></li>
+                    <li><Link className="white-text" to="/aboutUs">Conocenos</Link></li>
                 </ul>
             </div>
             <div className="col l3 s12">
                 <h5 className="pink-text text-lighten-3"><strong>Nuestras redes</strong></h5>
                 <ul>
-                    <li><a className="white-text" href="https://www.facebook.com/plazaprimaveras">Facebook</a></li>
-                    <li><a className="white-text" href="#!">Instagram</a></li>
+                    <li> 
+                        <a href="https://www.facebook.com/plazaprimaveras">
+                            <img id="fb-icon" src="https://image.flaticon.com/icons/svg/1384/1384005.svg"/>
+                        </a>
+                    </li>
                 </ul>
             </div>
       </div>
@@ -38,6 +41,6 @@ function footer(props) {
 
 }
 
-export default footer;
+export default Footer;
 
 

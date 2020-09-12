@@ -38,8 +38,8 @@ function Featured(props){
             <div className="row">
                 {boothCardsFeatured}
             </div>
-            <div class="row center">
-                <Link to="/directory" id="download-button" class="btn-large waves-effect deep-orange darken-2">Ver todos</Link>
+            <div className="row center">
+                <Link to="/directory" id="download-button" className="btn-large waves-effect deep-orange darken-2">Ver todos</Link>
             </div> 
         </div>
     </div>
