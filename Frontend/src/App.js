@@ -9,6 +9,7 @@ import Icons from './Components/icons';
 import Featured from './Components/featured'
 import Directory from './pages/directory';
 import AboutUS from './pages/aboutUs';
+import Booth from './pages/booth';
 
 
 function App() {
@@ -16,18 +17,26 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <Navbar/>
+
       <Route path="/home">
-        <Banner></Banner>
-        <Icons></Icons>
-        <Featured></Featured>
+        <Banner/>
+        <Icons/>
+        <Featured/>
       </Route>
+
       <Route path="/directory">
-        <Directory></Directory>
+        <Directory/>
       </Route>
+
       <Route path="/aboutUS">
-        <AboutUS></AboutUS>
+        <AboutUS/>
       </Route>
+
+      <Route path="/booth">
+        <Booth/>
+      </Route>
+
       <Footer/>
     </div>
   );
