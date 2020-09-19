@@ -14,7 +14,8 @@ function Directory(props) {
    async function fetchbooths() {
       const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/locales/`);
       setbooths(response.data)
-    }
+   }
+   
    useEffect(()=>{
       fetchbooths();
       const el = document.querySelector('.tabs');

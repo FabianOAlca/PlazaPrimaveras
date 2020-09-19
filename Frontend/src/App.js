@@ -18,15 +18,15 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Route path="/home">
-        <Banner></Banner>
+        <Banner/>
         <Icons></Icons>
-        <Featured></Featured>
+        <Featured/>
       </Route>
       <Route path="/directory">
         <Directory></Directory>
       </Route>
       <Route path="/aboutUS">
-        <AboutUS></AboutUS>
+        <AboutUS/>
       </Route>
       <Footer/>
     </div>

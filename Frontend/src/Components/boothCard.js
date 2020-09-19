@@ -11,7 +11,7 @@ function BoothCard(props){
         <div className="card">
             <div className="card-image">
                 <img src={`http://graph.facebook.com/${face_profile}/picture?width=500&height=500`}/> 
-                    <span className="card-title booth__title">{`Local ${numLocal}`}</span>
+                <span className="card-title booth__title">{`Local ${numLocal}`}</span>
             </div>
             <div className="card-content booth__description">
                 <p className="booth__content__description"> {description} </p>

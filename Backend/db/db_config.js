@@ -37,7 +37,6 @@ const Admin = sequelize.define('admin',{
     timestamps: false 
 });
 
-
 (async()=>{
     await sequelize.sync({force:false});
 })();

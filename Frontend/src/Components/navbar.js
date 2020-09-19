@@ -8,7 +8,7 @@ function Navbar(props) {
   
   function menu(){
     const element = document.querySelectorAll('.sidenav');
-    M.Sidenav.init(element);
+    M.Sidenav.init(element,{});
   }
 
   useEffect(()=>{
