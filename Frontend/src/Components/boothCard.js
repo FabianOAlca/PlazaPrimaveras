@@ -18,7 +18,7 @@ function BoothCard(props){
                 <p className="center"> {name} </p>
             </div>
             <div className="card-action center">
-                <a href="#">Conocer más</a>
+                <a href={`/booth/${numLocal}/${face_profile}`}>Conocer más</a>
             </div>
         </div>
     </div>

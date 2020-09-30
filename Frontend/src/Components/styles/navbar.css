@@ -1,0 +1,6 @@
+.brand-logo {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin-top: 5px;
+}

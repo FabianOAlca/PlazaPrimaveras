@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import './styles/navbar.css'
 import {Link} from 'react-router-dom'
 import M from 'materialize-css'
 
@@ -19,7 +20,7 @@ function Navbar(props) {
   <div>
     <nav className="nav-extended pink darken-3">
     <div className="nav-wrapper">
-      <Link to="/home" className="brand-logo"><img src="./images/logo.svg"/></Link>
+      <Link to="/home" className="brand-logo"><img src="/images/logo.svg"/></Link>
       <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
         <li><Link to="/home">Home</Link></li>

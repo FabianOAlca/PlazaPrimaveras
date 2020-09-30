@@ -33,7 +33,7 @@ function App() {
         <AboutUS/>
       </Route>
 
-      <Route path="/booth">
+      <Route path="/booth/:numLocal/:face_profile">
         <Booth/>
       </Route>
 
