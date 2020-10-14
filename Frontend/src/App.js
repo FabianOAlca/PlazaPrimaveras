@@ -9,6 +9,7 @@ import Icons from './Components/icons';
 import Featured from './Components/featured'
 import Directory from './pages/directory';
 import AboutUS from './pages/aboutUs';
+import StorePage from './pages/StorePage';
 
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
       </Route>
       <Route path="/aboutUS">
         <AboutUS/>
+      </Route>
+      <Route path="/store/:id">
+        <StorePage/>
       </Route>
       <Footer/>
     </div>

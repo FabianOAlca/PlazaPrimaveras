@@ -29,11 +29,11 @@ function AboutUs(props) {
                 </div>
                 <div className="row s12">
                     <div className="col l4 s4">
-                        <h5 class="grey-text text-darken-2"><strong>Datos</strong></h5>
-                        <p class="grey-text aboutUs__datos"><strong>Teléfono: 312 320 2404 </strong></p>
-                        <p class="grey-text aboutUs__datos"><strong> Correo: faosba@hotmail.com</strong></p>
+                        <h5 className="grey-text text-darken-2"><strong>Datos</strong></h5>
+                        <p className="grey-text aboutUs__datos"><strong>Teléfono: 312 320 2404 </strong></p>
+                        <p className="grey-text aboutUs__datos"><strong> Correo: faosba@hotmail.com</strong></p>
                         <div class="row">
-                            <div class="col l1 s3">
+                            <div className="col l1 s3">
                                 <a href="https://www.facebook.com/plazaprimaveras">
                                     <img id="fb-icon" src="https://image.flaticon.com/icons/svg/1384/1384005.svg"/>
                                 </a>

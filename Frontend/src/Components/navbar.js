@@ -18,22 +18,25 @@ function Navbar(props) {
  return(
   <div>
     <nav className="nav-extended pink darken-3">
-    <div className="nav-wrapper">
-      <Link to="/home" className="brand-logo"><img src="./images/logo.svg"/></Link>
-      <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
-      <ul id="nav-mobile" className="right hide-on-med-and-down">
-        <li><Link to="/home">Home</Link></li>
-        <li><Link to="/directory">Directorio</Link></li>
-        <li><Link to="/aboutUs">Conocenos</Link></li>
-      </ul>
-    </div>
-  </nav>
+      <div className="container">
+        <div className="nav-wrapper">
+          <Link to="/home" className="brand-logo"><img src="./images/logo.svg"/></Link>
+          <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <li><Link to="/home">Inicio</Link></li>
+            <li><Link to="/directory">Directorio</Link></li>
+            <li><Link to="/aboutUs">Conocenos</Link></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <ul className="sidenav" id="mobile-demo">
-    <li><Link to="/home">Home</Link></li>
-    <li><Link to="/directory">Directorio</Link></li>
-    <li><Link to="/aboutUs">Conocenos</Link></li>
-  </ul>
+    <ul className="sidenav" id="mobile-demo">
+      <li><Link to="/home">Inicio</Link></li>
+      <li><Link to="/directory">Directorio</Link></li>
+      <li><Link to="/aboutUs">Conocenos</Link></li>
+    </ul>
+
 
   </div>
 

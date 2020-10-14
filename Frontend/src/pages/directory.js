@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import './styles/directory.css'
 import M from 'materialize-css';
 
+const endpoint = 'https://plazabackendapi.herokuapp.com'
 
 function Directory(props) {
    
@@ -12,7 +13,7 @@ function Directory(props) {
    
    // function to get all messy info from backend 
    async function fetchbooths() {
-      const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/locales/`);
+      const response = await axios.get(`${endpoint}/locales/`);
       setbooths(response.data)
    }
    
@@ -61,8 +62,25 @@ function Directory(props) {
                     <li className="tab col s6 "><Link className="" to="#available">Disponibles</Link></li>
                  </ul>
             </div>
-            <div id="available" className="row"> {boothCardsAvailable} </div>
-            <div id="rented" className="col s12"> {boothCardsRented } </div>
+            <div id="available"> 
+               <div className="row">
+                  {boothCardsAvailable}
+               </div>
+               <div className="row">
+                  <div className="col l6 s6">
+                     <img className="materialboxed" width="100%" src="images/Planta_baja.png"/>
+                  </div>
+                  <div className="col l6 s6">
+                     <img className="materialboxed" width="100%" src="images/Planta_alta.png"/>
+                  </div>
+               </div>
+               <div className="row">
+                  <img className="materialboxed" width="100%" src="images/Tipos_locales.png"/>
+               </div>
+            </div>
+            <div id="rented" className="row"> 
+               {boothCardsRented } 
+            </div>
          </div>
       </div>
    </div>
