@@ -6,8 +6,6 @@
 ### Colaboradores del proyecto:
    * [Ilse Alejandra Polanco Isais](https://github.com/IlsePolanco)
    * [Jannay Salvador Tapia Guerrero](https://github.com/Blaheud)
-   * [Erick Francisco Barreto Rocha](https://github.com/Efcobr)
-   * [Francisco Javier Verduzco Vargas]()
    * [Edgar Fabian Osorio Alcala](https://github.com/FabianOAlca)
    
 
